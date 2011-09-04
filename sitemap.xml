@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://rednaxelafx.github.com/blog/2011/09/04/test-page/</loc>
+        <lastmod>2011-09-05T01:06:47+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://rednaxelafx.github.com/blog/archives/</loc>
+        <lastmod>2011-09-05T01:06:47+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://rednaxelafx.github.com/</loc>
+        <lastmod>2011-09-05T01:06:47+08:00</lastmod>
+    </url>
+</urlset>

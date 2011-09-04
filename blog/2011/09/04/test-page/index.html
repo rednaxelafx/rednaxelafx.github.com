@@ -1,0 +1,691 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Script Ahead, Code Behind: Test Page</title>
+  <meta name="author" content="Krystal Mok">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+  <link rel="canonical" href="http://rednaxelafx.github.com/blog/2011/09/04/test-page/"/>
+  <link href="/favicon.png" rel="shortcut icon" />
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="http://s3.amazonaws.com/ender-js/jeesh.min.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Script Ahead, Code Behind" type="application/atom+xml"/>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25520242-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+  <!--Fonts from Google's Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body  >
+  <header><hgroup>
+  <h1><a href="/">Script Ahead, Code Behind</a></h1>
+  
+    <h2>Krystal Mok's Weblog</h2>
+  
+</hgroup>
+
+</header>
+  <nav role=navigation><ul role=subscription data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="site-search">
+    <input type="hidden" name="q" value="site:rednaxelafx.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul role=main-navigation>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://github.com/rednaxelafx">Github</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry">
+  
+  <header>
+    
+      <h1 class="entry-title">Test Page</h1>
+    
+    
+      <p class="meta">
+
+
+
+
+<time datetime="2011-09-04 17:28:00 +0800" pubdate  updated >Sep 4<span>th</span>, 2011</time>
+
+
+</p>
+    
+  </header>
+
+
+<div class="entry-content"><p>This is a test page for my new blog on Github.</p>
+
+<p>I&rsquo;ll be gradually moving from my old blog to this one, since my old blog is
+mostly in Chinese, but it&rsquo;s likely for me to be writing more English posts in
+the future.</p>
+
+<p>Anyway, here&rsquo;s the link to my old blog: <a href="http://rednaxelafx.iteye.com">http://rednaxelafx.iteye.com</a></p>
+
+<p><a id="setup"></a></p>
+
+<h2>Setting up this blog</h2>
+
+<p>Apparently I&rsquo;m using <a href="http://octopress.org/">Octopress</a> to power this blog. Many
+thanks for the nice framework that save me a lot of time to get up to speed.
+I probably wouldn&rsquo;t have decided to move my blog here in the first place if
+there weren&rsquo;t ready-to-use solutions for lazy people like me.</p>
+
+<p>Just to remind myself of the steps I took to set it up:</p>
+
+<p>I followed <a href="http://yavaeye.com/p/show/hello-octopress">a guide</a> by
+<a href="http://luikore.github.com/">Zete Lui</a>(<a href="https://twitter.com/night_song">@night_song</a>)
+for the initial setup. Nice and easy.</p>
+
+<p>It&rsquo;ll take some more time to customizing everything. Let&rsquo;s see how it goes.</p>
+
+<p>So far, the customizations I&rsquo;ve made to the default Octopress blog are in:</p>
+
+<ul>
+<li>modified <code>Rakefile</code></li>
+</ul>
+
+
+<p>These two lines will have to be modified for me to get deploy working right:</p>
+
+<figure role=code><div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+<span class='line'>2</span>
+</pre></td><td class='code' width='100%'><pre><code class='ruby'><div class='line'><span class="n">deploy_default</span> <span class="o">=</span> <span class="s2">&quot;push&quot;</span>
+</div><div class='line'><span class="n">deploy_branch</span>  <span class="o">=</span> <span class="s2">&quot;master&quot;</span>
+</div></code></pre></td></tr></table></div></figure>
+
+<ul>
+<li>modified <code>_config.yml</code></li>
+</ul>
+
+
+<figure role=code><div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+<span class='line'>2</span>
+<span class='line'>3</span>
+<span class='line'>4</span>
+<span class='line'>5</span>
+<span class='line'>6</span>
+<span class='line'>7</span>
+<span class='line'>8</span>
+<span class='line'>9</span>
+<span class='line'>10</span>
+<span class='line'>11</span>
+<span class='line'>12</span>
+<span class='line'>13</span>
+<span class='line'>14</span>
+<span class='line'>15</span>
+<span class='line'>16</span>
+<span class='line'>17</span>
+<span class='line'>18</span>
+<span class='line'>19</span>
+<span class='line'>20</span>
+<span class='line'>21</span>
+<span class='line'>22</span>
+<span class='line'>23</span>
+<span class='line'>24</span>
+<span class='line'>25</span>
+<span class='line'>26</span>
+<span class='line'>27</span>
+<span class='line'>28</span>
+<span class='line'>29</span>
+<span class='line'>30</span>
+<span class='line'>31</span>
+<span class='line'>32</span>
+<span class='line'>33</span>
+<span class='line'>34</span>
+<span class='line'>35</span>
+<span class='line'>36</span>
+<span class='line'>37</span>
+<span class='line'>38</span>
+<span class='line'>39</span>
+<span class='line'>40</span>
+<span class='line'>41</span>
+<span class='line'>42</span>
+<span class='line'>43</span>
+<span class='line'>44</span>
+<span class='line'>45</span>
+<span class='line'>46</span>
+<span class='line'>47</span>
+<span class='line'>48</span>
+<span class='line'>49</span>
+<span class='line'>50</span>
+<span class='line'>51</span>
+<span class='line'>52</span>
+<span class='line'>53</span>
+<span class='line'>54</span>
+<span class='line'>55</span>
+<span class='line'>56</span>
+<span class='line'>57</span>
+<span class='line'>58</span>
+<span class='line'>59</span>
+<span class='line'>60</span>
+<span class='line'>61</span>
+<span class='line'>62</span>
+<span class='line'>63</span>
+<span class='line'>64</span>
+<span class='line'>65</span>
+<span class='line'>66</span>
+<span class='line'>67</span>
+<span class='line'>68</span>
+<span class='line'>69</span>
+<span class='line'>70</span>
+<span class='line'>71</span>
+<span class='line'>72</span>
+<span class='line'>73</span>
+<span class='line'>74</span>
+<span class='line'>75</span>
+<span class='line'>76</span>
+<span class='line'>77</span>
+</pre></td><td class='code' width='100%'><pre><code class='yaml'><div class='line'><span class="c1"># ----------------------- #</span>
+</div><div class='line'><span class="c1">#      Main Configs       #</span>
+</div><div class='line'><span class="c1"># ----------------------- #</span>
+</div><div class='line'>
+</div><div class='line'><span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://rednaxelafx.github.com</span>
+</div><div class='line'><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Script Ahead, Code Behind</span>
+</div><div class='line'><span class="l-Scalar-Plain">subtitle</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Krystal Mok&#39;s Weblog</span>
+</div><div class='line'><span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Krystal Mok</span>
+</div><div class='line'><span class="l-Scalar-Plain">simple_search</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://google.com/search</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># RSS / Email (optional) subscription links (change if using something like Feedburner)</span>
+</div><div class='line'><span class="l-Scalar-Plain">subscribe_rss</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/atom.xml</span>
+</div><div class='line'><span class="l-Scalar-Plain">subscribe_email</span><span class="p-Indicator">:</span>
+</div><div class='line'><span class="c1"># RSS feeds can list your email address if you like</span>
+</div><div class='line'><span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># ----------------------- #</span>
+</div><div class='line'><span class="c1">#    Jekyll &amp; Plugins     #</span>
+</div><div class='line'><span class="c1"># ----------------------- #</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># If publishing to a subdirectory as in http://site.com/project set &#39;root: /project&#39;</span>
+</div><div class='line'><span class="l-Scalar-Plain">root</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/</span>
+</div><div class='line'><span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/blog/:year/:month/:day/:title/</span>
+</div><div class='line'><span class="l-Scalar-Plain">source</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">source</span>
+</div><div class='line'><span class="l-Scalar-Plain">destination</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">public</span>
+</div><div class='line'><span class="l-Scalar-Plain">plugins</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">plugins</span>
+</div><div class='line'><span class="l-Scalar-Plain">code_dir</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">downloads/code</span>
+</div><div class='line'><span class="l-Scalar-Plain">category_dir</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">blog/categories</span>
+</div><div class='line'><span class="l-Scalar-Plain">markdown</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">rdiscount</span>
+</div><div class='line'><span class="l-Scalar-Plain">rdiscount</span><span class="p-Indicator">:</span>
+</div><div class='line'>  <span class="l-Scalar-Plain">extensions</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">smart</span><span class="p-Indicator">,</span> <span class="nv">autolink</span><span class="p-Indicator">]</span>
+</div><div class='line'><span class="l-Scalar-Plain">pygments</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">false</span> <span class="c1"># default python pygments have been replaced by pygments.rb</span>
+</div><div class='line'>
+</div><div class='line'><span class="l-Scalar-Plain">paginate</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">10</span>          <span class="c1"># Posts per page on the blog index</span>
+</div><div class='line'><span class="l-Scalar-Plain">pagination_dir</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">blog</span>  <span class="c1"># Directory base for pagination URLs eg. /blog/page/2/</span>
+</div><div class='line'><span class="l-Scalar-Plain">recent_posts</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">6</span>       <span class="c1"># Posts in the sidebar Recent Posts section</span>
+</div><div class='line'><span class="l-Scalar-Plain">excerpt_link</span><span class="p-Indicator">:</span> <span class="s">&quot;Read</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">&amp;rarr;&quot;</span>  <span class="c1"># &quot;Continue reading&quot; link text at the bottom of excerpted articles</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># list each of the sidebar modules you want to include, in the order you want them to appear.</span>
+</div><div class='line'><span class="c1"># To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like &#39;custom/asides/custom_aside_name.html&#39;</span>
+</div><div class='line'><span class="l-Scalar-Plain">default_asides</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">custom/asides/about.html</span><span class="p-Indicator">,</span> <span class="nv">asides/recent_posts.html</span><span class="p-Indicator">,</span> <span class="nv">custom/asides/tags.html</span><span class="p-Indicator">,</span> <span class="nv">custom/asides/blogroll.html</span><span class="p-Indicator">,</span> <span class="nv">asides/twitter.html</span><span class="p-Indicator">]</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below</span>
+</div><div class='line'><span class="c1"># and add an array with the asides you want to use.</span>
+</div><div class='line'><span class="c1"># blog_index_asides:</span>
+</div><div class='line'><span class="c1"># post_asides:</span>
+</div><div class='line'><span class="c1"># page_asides:</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># ----------------------- #</span>
+</div><div class='line'><span class="c1">#   3rd Party Settings    #</span>
+</div><div class='line'><span class="c1"># ----------------------- #</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># Twitter</span>
+</div><div class='line'><span class="l-Scalar-Plain">twitter_user</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">rednaxelafx</span>
+</div><div class='line'><span class="l-Scalar-Plain">twitter_tweet_count</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">6</span>
+</div><div class='line'><span class="l-Scalar-Plain">twitter_show_replies</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">false</span>
+</div><div class='line'><span class="l-Scalar-Plain">twitter_follow_button</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span>
+</div><div class='line'><span class="l-Scalar-Plain">twitter_show_follower_count</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">false</span>
+</div><div class='line'><span class="l-Scalar-Plain">twitter_tweet_button</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># Google Plus</span>
+</div><div class='line'><span class="l-Scalar-Plain">google_plus_one</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span>
+</div><div class='line'><span class="l-Scalar-Plain">google_plus_one_size</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">medium</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># Pinboard</span>
+</div><div class='line'><span class="l-Scalar-Plain">pinboard_user</span><span class="p-Indicator">:</span>
+</div><div class='line'><span class="l-Scalar-Plain">pinboard_count</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">3</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># Delicious</span>
+</div><div class='line'><span class="l-Scalar-Plain">delicious_user</span><span class="p-Indicator">:</span>
+</div><div class='line'><span class="l-Scalar-Plain">delicious_count</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">3</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># Disqus Comments</span>
+</div><div class='line'><span class="l-Scalar-Plain">disqus_short_name</span><span class="p-Indicator">:</span>
+</div><div class='line'>
+</div><div class='line'><span class="c1"># Google Analytics</span>
+</div><div class='line'><span class="l-Scalar-Plain">google_analytics_tracking_id</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">UA-25520242-1</span>
+</div></code></pre></td></tr></table></div></figure>
+
+<ul>
+<li>modified <code>sass/partials/sidebar/_base.scss</code></li>
+</ul>
+
+
+<p>Copied the style for the search box from <code>sass/partials/_navigation.scss</code> for
+the tag filter box:</p>
+
+<figure role=code><div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+<span class='line'>2</span>
+<span class='line'>3</span>
+<span class='line'>4</span>
+<span class='line'>5</span>
+<span class='line'>6</span>
+<span class='line'>7</span>
+<span class='line'>8</span>
+<span class='line'>9</span>
+<span class='line'>10</span>
+<span class='line'>11</span>
+<span class='line'>12</span>
+<span class='line'>13</span>
+<span class='line'>14</span>
+<span class='line'>15</span>
+<span class='line'>16</span>
+<span class='line'>17</span>
+<span class='line'>18</span>
+<span class='line'>19</span>
+<span class='line'>20</span>
+</pre></td><td class='code' width='100%'><pre><code class='scss'><div class='line'><span class="nc">.search</span> <span class="p">{</span>
+</div><div class='line'>    <span class="na">padding</span><span class="o">:</span> <span class="mf">.3</span><span class="kt">em</span> <span class="mf">.5</span><span class="kt">em</span> <span class="mi">0</span><span class="p">;</span>
+</div><div class='line'>    <span class="na">font-size</span><span class="o">:</span> <span class="mf">.85</span><span class="kt">em</span><span class="p">;</span>
+</div><div class='line'>    <span class="k">@extend</span> <span class="nc">.sans</span><span class="o">;</span>
+</div><div class='line'>    <span class="nt">line-height</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.1em</span><span class="o">;</span>
+</div><div class='line'>    <span class="nt">width</span><span class="nd">:</span> <span class="nt">95</span><span class="err">%</span><span class="o">;</span>
+</div><div class='line'>    <span class="o">@</span><span class="nt">include</span> <span class="nt">border-radius</span><span class="o">(</span><span class="nc">.5em</span><span class="o">);</span>
+</div><div class='line'>    <span class="o">@</span><span class="nt">include</span> <span class="nt">background-clip</span><span class="o">(</span><span class="nt">padding-box</span><span class="o">);</span>
+</div><div class='line'>    <span class="o">@</span><span class="nt">include</span> <span class="nt">box-shadow</span><span class="o">(</span><span class="nt">lighten</span><span class="o">(</span><span class="err">$</span><span class="nt">nav-bg</span><span class="o">,</span> <span class="nt">2</span><span class="o">)</span> <span class="nt">0</span> <span class="nt">1px</span><span class="o">);</span>
+</div><div class='line'>    <span class="nt">background-color</span><span class="nd">:</span> <span class="nt">lighten</span><span class="o">(</span><span class="err">$</span><span class="nt">nav-bg</span><span class="o">,</span> <span class="nt">15</span><span class="o">);</span>
+</div><div class='line'>    <span class="nt">border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="err">$</span><span class="nt">nav-border</span><span class="o">;</span>
+</div><div class='line'>    <span class="nt">color</span><span class="nd">:</span> <span class="nn">#888</span><span class="o">;</span>
+</div><div class='line'>    <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+</div><div class='line'>      <span class="na">color</span><span class="o">:</span> <span class="mh">#444</span><span class="p">;</span>
+</div><div class='line'>      <span class="na">border-color</span><span class="o">:</span> <span class="mh">#80b1df</span><span class="p">;</span>
+</div><div class='line'>      <span class="k">@include</span><span class="nd"> box-shadow</span><span class="p">(</span><span class="mh">#80b1df</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">4</span><span class="kt">px</span><span class="o">,</span> <span class="mh">#80b1df</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">3</span><span class="kt">px</span> <span class="no">inset</span><span class="p">);</span>
+</div><div class='line'>      <span class="na">background-color</span><span class="o">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</div><div class='line'>      <span class="na">outline</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+</div><div class='line'>    <span class="p">}</span>
+</div><div class='line'>  <span class="p">}</span>
+</div></code></pre></td></tr></table></div></figure>
+
+<p>And, changed the style for <code>&lt;li&gt;</code> tags so that the blogroll hierarchy can be
+shown:</p>
+
+<figure role=code><div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+<span class='line'>2</span>
+<span class='line'>3</span>
+<span class='line'>4</span>
+<span class='line'>5</span>
+<span class='line'>6</span>
+<span class='line'>7</span>
+<span class='line'>8</span>
+<span class='line'>9</span>
+<span class='line'>10</span>
+<span class='line'>11</span>
+</pre></td><td class='code' width='100%'><pre><code class='scss'><div class='line'><span class="nt">li</span> <span class="p">{</span>
+</div><div class='line'><span class="c1">//    list-style: none;</span>
+</div><div class='line'>    <span class="na">padding</span><span class="o">:</span> <span class="mf">.5</span><span class="kt">em</span> <span class="mi">0</span><span class="p">;</span>
+</div><div class='line'>    <span class="na">margin</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+</div><div class='line'>    <span class="na">margin-left</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</div><div class='line'>    <span class="na">border-bottom</span><span class="o">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="no">solid</span> <span class="nv">$sidebar-border</span><span class="p">;</span>
+</div><div class='line'>    <span class="k">@extend</span> <span class="nc">.side-shadow-border</span><span class="o">;</span>
+</div><div class='line'>    <span class="nt">p</span><span class="nd">:last-child</span> <span class="p">{</span>
+</div><div class='line'>      <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+</div><div class='line'>    <span class="p">}</span>
+</div><div class='line'>  <span class="p">}</span>
+</div></code></pre></td></tr></table></div></figure>
+
+<ul>
+<li>modified <code>sass/screen.scss</code></li>
+</ul>
+
+
+<p>Added the following to make lists indent right. Otherwise they stick out to the
+left and look weird.</p>
+
+<figure role=code><div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+<span class='line'>2</span>
+<span class='line'>3</span>
+</pre></td><td class='code' width='100%'><pre><code class='scss'><div class='line'><span class="nc">.entry-content</span> <span class="nt">li</span> <span class="p">{</span>
+</div><div class='line'>  <span class="na">margin-left</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</div><div class='line'><span class="p">}</span>
+</div></code></pre></td></tr></table></div></figure>
+
+<ul>
+<li>added <code>source/_includes/custom/asides/tags.html</code></li>
+</ul>
+
+
+<figure role=code><div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+<span class='line'>2</span>
+<span class='line'>3</span>
+<span class='line'>4</span>
+<span class='line'>5</span>
+<span class='line'>6</span>
+<span class='line'>7</span>
+<span class='line'>8</span>
+<span class='line'>9</span>
+<span class='line'>10</span>
+<span class='line'>11</span>
+<span class='line'>12</span>
+<span class='line'>13</span>
+<span class='line'>14</span>
+<span class='line'>15</span>
+<span class='line'>16</span>
+<span class='line'>17</span>
+<span class='line'>18</span>
+<span class='line'>19</span>
+<span class='line'>20</span>
+<span class='line'>21</span>
+<span class='line'>22</span>
+<span class='line'>23</span>
+<span class='line'>24</span>
+<span class='line'>25</span>
+</pre></td><td class='code' width='100%'><pre><code class='html'><div class='line'><span class="nt">&lt;section&gt;</span>
+</div><div class='line'>  <span class="nt">&lt;h1&gt;</span>Tags<span class="nt">&lt;/h1&gt;</span>
+</div><div class='line'>  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;search&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;filter_tags&quot;</span> <span class="na">results=</span><span class="s">&quot;0&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Filter Tags ...&quot;</span><span class="nt">/&gt;</span>
+</div><div class='line'>  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</div><div class='line'>    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;input[name=filter_tags]&#39;</span><span class="p">).</span><span class="nx">keyup</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+</div><div class='line'>      <span class="kd">var</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+</div><div class='line'>      <span class="k">if</span> <span class="p">(</span><span class="sr">/^\s*$/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="o">||</span> <span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">==</span> <span class="mi">27</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 27 is &#39;esc&#39;</span>
+</div><div class='line'>        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#tags li&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+</div><div class='line'>        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+</div><div class='line'>        <span class="k">return</span><span class="p">;</span>
+</div><div class='line'>      <span class="p">}</span>
+</div><div class='line'>      <span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="nx">val</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">);</span>
+</div><div class='line'>      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#tags li&#39;</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</div><div class='line'>        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">)[</span><span class="nx">pattern</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">())</span> <span class="o">?</span> <span class="s1">&#39;show&#39;</span> <span class="o">:</span> <span class="s1">&#39;hide&#39;</span><span class="p">]();</span>
+</div><div class='line'>      <span class="p">});</span>
+</div><div class='line'>    <span class="p">});</span>
+</div><div class='line'>  <span class="nt">&lt;/script&gt;</span>
+</div><div class='line'>  <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;tags&quot;</span><span class="nt">&gt;</span>
+</div><div class='line'>    {% for cat in site.categories %}
+</div><div class='line'>      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;post&quot;</span><span class="nt">&gt;</span>
+</div><div class='line'>        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/blog/categories/&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
+</div><div class='line'>      <span class="nt">&lt;/li&gt;</span>
+</div><div class='line'>    {% endfor %}
+</div><div class='line'>  <span class="nt">&lt;/ul&gt;</span>
+</div><div class='line'><span class="nt">&lt;/section&gt;</span>
+</div></code></pre></td></tr></table></div></figure>
+
+<ul>
+<li>modified <code>source/_includes/custom/navigation.html</code></li>
+</ul>
+
+
+<figure role=code><div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+<span class='line'>2</span>
+<span class='line'>3</span>
+<span class='line'>4</span>
+<span class='line'>5</span>
+</pre></td><td class='code' width='100%'><pre><code class='html'><div class='line'><span class="nt">&lt;ul</span> <span class="na">role=</span><span class="s">main-navigation</span><span class="nt">&gt;</span>
+</div><div class='line'>  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>Blog<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</div><div class='line'>  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/blog/archives&quot;</span><span class="nt">&gt;</span>Archives<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</div><div class='line'>  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://github.com/rednaxelafx&quot;</span><span class="nt">&gt;</span>Github<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</div><div class='line'><span class="nt">&lt;/ul&gt;</span>
+</div></code></pre></td></tr></table></div></figure>
+
+<ul>
+<li>modified <code>source/_includes/custom/asides/about.html</code></li>
+<li>added <code>source/_includes/custom/asides/blogroll.html</code></li>
+</ul>
+
+
+<p>That&rsquo;s probably &hellip; about it? I&rsquo;ve got lost track of what else I modified.
+Anyway, this reminder should be enough if I should ever need to do it again.</p>
+
+<p>Oh, right, I need to update the <code>source/favicon.png</code> file.</p>
+
+<p><a id="misc"></a></p>
+
+<h2>Miscellaneous</h2>
+
+<p>I&rsquo;ve learned that <a href="http://octopress.org/docs/blogging/code/">embedding a Gist</a>
+can be done with:</p>
+
+<figure role=code><div class="highlight"><table cellpadding="0" cellspacing="0"><tr><td class="gutter"><pre class="line-numbers"><span class='line'>1</span>
+</pre></td><td class='code' width='100%'><pre><code class='django'><div class='line'><span class="cp">{%</span> <span class="k">gist</span> <span class="o">&lt;</span><span class="nv">gist_id</span><span class="o">&gt;</span> <span class="o">[</span><span class="nv">display</span> <span class="nv">file</span> <span class="nv">name</span><span class="o">]</span> <span class="cp">%}</span><span class="x"></span>
+</div></code></pre></td></tr></table></div></figure>
+
+<p>To make life easier when editing Markdown files on my Ubuntu box with GEdit,
+I&rsquo;ve installed <a href="http://www.jpfleury.net/en/software/gedit-markdown.php">gedit-markdown</a>
+plugin.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Krystal Mok</span></span>
+
+      
+
+
+
+
+<time datetime="2011-09-04 17:28:00 +0800" pubdate  updated >Sep 4<span>th</span>, 2011</time>
+
+
+
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/meta/'>meta</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rednaxelafx.github.com/blog/2011/09/04/test-page/" data-via="rednaxelafx" data-counturl="http://rednaxelafx.github.com/blog/2011/09/04/test-page/" >Tweet</a>
+  
+  
+  <g:plusone size="medium"></g:plusone>
+  
+</div>
+
+    
+  </footer>
+</article>
+
+</div>
+
+<aside role=sidebar>
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    <img src="images/avatar.jpg" width="120" style="float:left;margin-right:10px" />
+    I&#8217;m a software engineer, currently working on JVM performance
+    and related toolings, at <a href="http://www.taobao.com">Taobao.com</a>.
+  </p>
+  <p>
+    Polyglot programmer. Interested in programming language design and
+    implementations, especially in compilers and virtual machines. Mostly
+    hacking on OpenJDK / HotSpot VM codebase these days.
+  </p>
+  <p>
+    Loves anime/comic/game and kart racing.
+  </p>
+  <p>
+    Chinese blog at: <a href="http://rednaxelafx.iteye.com" target="_blank">http://rednaxelafx.iteye.com</a>
+  </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/09/04/test-page/">Test Page</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Tags</h1>
+  <input class="search" type="text" name="filter_tags" results="0" placeholder="Filter Tags ..."/>
+  <script type="text/javascript">
+    $('input[name=filter_tags]').keyup(function(e){
+      var val = $(this).val();
+      if (/^\s*$/.test(val) || e.keyCode == 27) { // 27 is 'esc'
+        $('#tags li').show();
+        $(this).val('');
+        return;
+      }
+      var pattern = new RegExp(val, 'i');
+      $('#tags li').each(function(){
+        $(this)[pattern.test($(this).find('a').text()) ? 'show' : 'hide']();
+      });
+    });
+  </script>
+  <ul id="tags">
+    
+      <li class="post">
+        <a href="/blog/categories/meta">meta</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Blogroll</h1>
+  <ul id="blogroll">
+    <li>
+      HotSpot Developers
+      <ul id="blogroll_hotspot">
+        <li><a href="http://blogs.oracle.com/jrose/">John Rose</a></li>
+        <li><a href="http://blogs.oracle.com/fatcatair/">Steve Goldman</a></li>
+        <li><a href="http://blogs.oracle.com/twisti/">Christian Thalinger</a></li>
+        <li><a href="http://blogs.oracle.com/dave/">David Dice</a></li>
+        <li><a href="http://blogs.oracle.com/tony/">Tony Printezis</a></li>
+        <li><a href="http://blogs.oracle.com/jonthecollector/">Jon Masamitsu</a></li>
+        <li><a href="http://blogs.oracle.com/dholmes/">David Holmes</a></li>
+        <li><a href="http://blogs.oracle.com/poonam/">Poonam Bajaj</a></li>
+        <li><a href="http://blogs.oracle.com/charliebrown/">Charlie Hunt</a></li>
+        <li><a href="http://blogs.oracle.com/kbr/">Ken Russell</a></li>
+        <li><a href="http://blogs.oracle.com/alanb/">Alan Bateman</a></li>
+        <li><a href="http://blogs.oracle.com/kamg/">Keith McGuigan</a></li>
+        <li><a href="http://blogs.oracle.com/briand/">Brian Doherty</a></li>
+        <li><a href="http://blogs.oracle.com/ksrini/">Kumar Srinivasan</a></li>
+        <li><a href="http://blogs.oracle.com/sbohne/">Steve Bohne</a></li>
+        <li><a href="http://blogs.oracle.com/dagastine/">David Dagastine Keenan</a></li>
+        <li><a href="http://blogs.oracle.com/moazam/">Moazam Rajas</a></li>
+      </ul>
+    </li>
+    <li>
+      Programmers
+      <ul id="blogroll_programmers">
+        <li><a href="http://blog.headius.com/">Charles Oliver Nutter</a></li>
+        <li>To be added&#8230;</li>
+      </ul>
+    </li>
+    <li>
+      Friends - Programmers
+      <ul id="blogroll_friends">
+        <li><a href="http://saitowu.github.com">Saito Wu</a></li>
+        <li><a href="http://luikore.github.com">Zete Lui</a></li>
+        <li>To be added&#8230;</li>
+      </ul>
+    </li>
+    <li>
+      Websites
+      <ul id="blogroll_websites">
+        <li><a href="http://yavaeye.com/">Yavaeye</a></li>
+        <li>To be added&#8230;</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rednaxelafx", 6, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rednaxelafx" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @rednaxelafx</a>
+  
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer><p>
+  Copyright &copy; 2011 - Krystal Mok -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Script Ahead, Code Behind</title>
+  <link href="http://rednaxelafx.github.com/atom.xml" rel="self"/>
+  <link href="http://rednaxelafx.github.com/"/>
+  <updated>2011-09-05T01:06:57+08:00</updated>
+  <id>http://rednaxelafx.github.com/</id>
+  <author>
+    <name>Krystal Mok</name>
+    
+  </author>
+
+  
+  <entry>
+    <title>Test Page</title>
+    <link href="http://rednaxelafx.github.com/blog/2011/09/04/test-page/"/>
+    <updated>2011-09-04T17:28:00+08:00</updated>
+    <id>http://rednaxelafx.github.com/blog/2011/09/04/test-page</id>
+    <content type="html">&lt;p&gt;This is a test page for my new blog on Github.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll be gradually moving from my old blog to this one, since my old blog is
+mostly in Chinese, but it&amp;rsquo;s likely for me to be writing more English posts in
+the future.&lt;/p&gt;
+
+&lt;p&gt;Anyway, here&amp;rsquo;s the link to my old blog: &lt;a href=&quot;http://rednaxelafx.iteye.com&quot;&gt;http://rednaxelafx.iteye.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&quot;setup&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Setting up this blog&lt;/h2&gt;
+
+&lt;p&gt;Apparently I&amp;rsquo;m using &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; to power this blog. Many
+thanks for the nice framework that save me a lot of time to get up to speed.
+I probably wouldn&amp;rsquo;t have decided to move my blog here in the first place if
+there weren&amp;rsquo;t ready-to-use solutions for lazy people like me.&lt;/p&gt;
+
+&lt;p&gt;Just to remind myself of the steps I took to set it up:&lt;/p&gt;
+
+&lt;p&gt;I followed &lt;a href=&quot;http://yavaeye.com/p/show/hello-octopress&quot;&gt;a guide&lt;/a&gt; by
+&lt;a href=&quot;http://luikore.github.com/&quot;&gt;Zete Lui&lt;/a&gt;(&lt;a href=&quot;https://twitter.com/night_song&quot;&gt;@night_song&lt;/a&gt;)
+for the initial setup. Nice and easy.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;ll take some more time to customizing everything. Let&amp;rsquo;s see how it goes.&lt;/p&gt;
+
+&lt;p&gt;So far, the customizations I&amp;rsquo;ve made to the default Octopress blog are in:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;modified &lt;code&gt;Rakefile&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;These two lines will have to be modified for me to get deploy working right:&lt;/p&gt;
+
+&lt;p&gt;``` ruby&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;deploy_default = &quot;push&quot;
+deploy_branch  = &quot;master&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;modified &lt;code&gt;_config.yml&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;``` yaml&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://rednaxelafx.github.com
+title: Script Ahead, Code Behind
+subtitle: Krystal Mok's Weblog
+author: Krystal Mok
+simple_search: http://google.com/search
+
+# RSS / Email (optional) subscription links (change if using something like Feedburner)
+subscribe_rss: /atom.xml
+subscribe_email:
+# RSS feeds can list your email address if you like
+email:
+
+# ----------------------- #
+#    Jekyll &amp;amp; Plugins     #
+# ----------------------- #
+
+# If publishing to a subdirectory as in http://site.com/project set 'root: /project'
+root: /
+permalink: /blog/:year/:month/:day/:title/
+source: source
+destination: public
+plugins: plugins
+code_dir: downloads/code
+category_dir: blog/categories
+markdown: rdiscount
+rdiscount:
+  extensions: [smart, autolink]
+pygments: false # default python pygments have been replaced by pygments.rb
+
+paginate: 10          # Posts per page on the blog index
+pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+recent_posts: 6       # Posts in the sidebar Recent Posts section
+excerpt_link: &quot;Read on &amp;amp;rarr;&quot;  # &quot;Continue reading&quot; link text at the bottom of excerpted articles
+
+# list each of the sidebar modules you want to include, in the order you want them to appear.
+# To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
+default_asides: [custom/asides/about.html, asides/recent_posts.html, custom/asides/tags.html, custom/asides/blogroll.html, asides/twitter.html]
+
+# Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
+# and add an array with the asides you want to use.
+# blog_index_asides:
+# post_asides:
+# page_asides:
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+# Twitter
+twitter_user: rednaxelafx
+twitter_tweet_count: 6
+twitter_show_replies: false
+twitter_follow_button: true
+twitter_show_follower_count: false
+twitter_tweet_button: true
+
+# Google Plus
+google_plus_one: true
+google_plus_one_size: medium
+
+# Pinboard
+pinboard_user:
+pinboard_count: 3
+
+# Delicious
+delicious_user:
+delicious_count: 3
+
+# Disqus Comments
+disqus_short_name:
+
+# Google Analytics
+google_analytics_tracking_id: UA-25520242-1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;modified &lt;code&gt;sass/partials/sidebar/_base.scss&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Copied the style for the search box from &lt;code&gt;sass/partials/_navigation.scss&lt;/code&gt; for
+the tag filter box:&lt;/p&gt;
+
+&lt;p&gt;``` scss&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  .search {
+    padding: .3em .5em 0;
+    font-size: .85em;
+    @extend .sans;
+    line-height: 1.1em;
+    width: 95%;
+    @include border-radius(.5em);
+    @include background-clip(padding-box);
+    @include box-shadow(lighten($nav-bg, 2) 0 1px);
+    background-color: lighten($nav-bg, 15);
+    border: 1px solid $nav-border;
+    color: #888;
+    &amp;amp;:focus {
+      color: #444;
+      border-color: #80b1df;
+      @include box-shadow(#80b1df 0 0 4px, #80b1df 0 0 3px inset);
+      background-color: #fff;
+      outline: none;
+    }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;And, changed the style for &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; tags so that the blogroll hierarchy can be
+shown:&lt;/p&gt;
+
+&lt;p&gt;``` scss&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  li {
+//    list-style: none;
+    padding: .5em 0;
+    margin: 0;
+    margin-left: 20px;
+    border-bottom: 1px solid $sidebar-border;
+    @extend .side-shadow-border;
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;modified &lt;code&gt;sass/screen.scss&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Added the following to make lists indent right. Otherwise they stick out to the
+left and look weird.&lt;/p&gt;
+
+&lt;p&gt;``` scss&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.entry-content li {
+  margin-left: 20px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;added &lt;code&gt;source/_includes/custom/asides/tags.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;``` html&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;section&amp;gt;
+  &amp;lt;h1&amp;gt;Tags&amp;lt;/h1&amp;gt;
+  &amp;lt;input class=&quot;search&quot; type=&quot;text&quot; name=&quot;filter_tags&quot; results=&quot;0&quot; placeholder=&quot;Filter Tags ...&quot;/&amp;gt;
+  &amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
+    $('input[name=filter_tags]').keyup(function(e){
+      var val = $(this).val();
+      if (/^\s*$/.test(val) || e.keyCode == 27) { // 27 is 'esc'
+        $('#tags li').show();
+        $(this).val('');
+        return;
+      }
+      var pattern = new RegExp(val, 'i');
+      $('#tags li').each(function(){
+        $(this)[pattern.test($(this).find('a').text()) ? 'show' : 'hide']();
+      });
+    });
+  &amp;lt;/script&amp;gt;
+  &amp;lt;ul id=&quot;tags&quot;&amp;gt;
+    {% for cat in site.categories %}
+      &amp;lt;li class=&quot;post&quot;&amp;gt;
+        &amp;lt;a href=&quot;http://rednaxelafx.github.com/blog/categories/&quot;&amp;gt;&amp;lt;/a&amp;gt;
+      &amp;lt;/li&amp;gt;
+    {% endfor %}
+  &amp;lt;/ul&amp;gt;
+&amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;modified &lt;code&gt;source/_includes/custom/navigation.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;``` html&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul role=main-navigation&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;a href=&quot;http://rednaxelafx.github.com/&quot;&amp;gt;Blog&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;a href=&quot;http://rednaxelafx.github.com/blog/archives&quot;&amp;gt;Archives&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;&amp;lt;a href=&quot;https://github.com/rednaxelafx&quot;&amp;gt;Github&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;modified &lt;code&gt;source/_includes/custom/asides/about.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;added &lt;code&gt;source/_includes/custom/asides/blogroll.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;That&amp;rsquo;s probably &amp;hellip; about it? I&amp;rsquo;ve got lost track of what else I modified.
+Anyway, this reminder should be enough if I should ever need to do it again.&lt;/p&gt;
+
+&lt;p&gt;Oh, right, I need to update the &lt;code&gt;source/favicon.png&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&quot;misc&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Miscellaneous&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve learned that &lt;a href=&quot;http://octopress.org/docs/blogging/code/&quot;&gt;embedding a Gist&lt;/a&gt;
+can be done with:&lt;/p&gt;
+
+&lt;p&gt;``` django&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{% gist &amp;lt;gist_id&amp;gt; [display file name] %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;To make life easier when editing Markdown files on my Ubuntu box with GEdit,
+I&amp;rsquo;ve installed &lt;a href=&quot;http://www.jpfleury.net/en/software/gedit-markdown.php&quot;&gt;gedit-markdown&lt;/a&gt;
+plugin.&lt;/p&gt;
+</content>
+  </entry>
+  
+</feed>
